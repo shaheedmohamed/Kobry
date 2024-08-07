@@ -1,0 +1,69 @@
+
+.nav-borders .nav-link.active {
+    color: #0061f2;
+    border-bottom-color: #0061f2;
+}
+.nav-borders .nav-link {
+    color: #69707a;
+    border-bottom-width: 0.125rem;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.TheImageProfile{
+    width: 100%;
+    border: 1.5px solid black;
+}
+.ImageArea{
+    position: relative;
+}
+.TheInputFile{
+    display: none;
+}
+.TheDragAreaContent{
+    text-align: center;
+    border-radius: 10px;
+    border: 4px dashed #0061f293;
+    padding: 70px 10px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.ImageArea{
+    display: none;
+}
+.BrowseBTN{
+    color: #0061f2;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+}
+small{
+    font-size: 13px;
+    margin-top: 25px;
+}
+.Error{
+    color: red;
+    display: none;
+    margin-top:5px;
+}
+.TheOutPutImage{
+    width: 100%;
+    border-radius: 7px;
+    border: 2px solid #292929;
+}
+.EditXMark{
+    padding: 1px 5px;
+    border-radius: 2px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #292929;
+    background-color: white;
+}

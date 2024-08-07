@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Edit| FIKRAH</title>
+    <!-- Links -->
+    <link rel="stylesheet" href="../../External library files/bootstrap/css/bootstrap.min.css">
+    <!-- The Bootstrap Css File -->
+    <link rel="stylesheet" href="../../External library files/fontawesome/css/all.min.css">
+    <!-- The FontaWesome Css File -->
+    <link rel="stylesheet" href="CSS/TheProfilePageEdit.css"> <!-- My WebPage Css File -->
+    <link rel="shortcut icon" href="../../IntroDuction video's and img/TheFAV.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="container-xl px-4 mt-4 TheBigContiner">
+        <!-- Account page navigation-->
+        <div class="row">
+            <div class="col-xl-4">
+                <!-- Profile picture card-->
+                <div class="card mb-4 mb-xl-0">
+                    <div class="card-header">Profile Picture</div>
+                    <div class="card-body text-center">
+                        <!-- Profile picture image-->
+                        <img class="img-account-profile rounded-circle mb-2 TheImageProfile"
+                            src="../../IntroDuction video's and img/Unknow.jpg" alt="">
+                        <!-- Profile picture help block-->
+                        <div class="small font-italic text-muted mb-4">JPG or PNG</div>
+                        <!-- Profile picture upload button-->
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">Change image</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-8">
+                <!-- Account details card-->
+                <div class="card mb-4">
+                    <div class="card-header">Account Details</div>
+                    <div class="card-body">
+                        <form>
+                            <!-- Form Group (username)-->
+                            <div class="mb-3">
+                                <label class="small mb-1" for="inputUsername">Username ( your name will appear to other
+                                    users on the site )</label>
+                                <input class="form-control" id="inputUsername" type="text"
+                                    placeholder="Enter your username" value="UserName">
+                            </div>
+                            <!-- Form Row-->
+                            <div class="row gx-3 mb-3">
+                                <!-- Form Group (first name)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputFirstName">First name</label>
+                                    <input class="form-control" id="inputFirstName" type="text"
+                                        placeholder="Enter your first name" value="User">
+                                </div>
+                                <!-- Form Group (last name)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputLastName">Last name</label>
+                                    <input class="form-control" id="inputLastName" type="text"
+                                        placeholder="Enter your last name" value="Name">
+                                </div>
+                            </div>
+                            <!-- Form Row        -->
+                            <div class="row gx-3 mb-3">
+                                <!-- Form Group (organization name)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputOrgName">Organization name</label>
+                                    <input class="form-control" id="inputOrgName" type="text"
+                                        placeholder="Enter your organization name" value="Neom">
+                                </div>
+                                <!-- Form Group (location)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputLocation">Location</label>
+                                    <input class="form-control" id="inputLocation" type="text"
+                                        placeholder="Enter your location" value="KSA">
+                                </div>
+                            </div>
+                            <!-- Form Group (email address)-->
+                            <div class="mb-3">
+                                <label class="small mb-1" for="inputEmailAddress">Email address</label>
+                                <input class="form-control" id="inputEmailAddress" type="email"
+                                    placeholder="Enter your email address" value="UserName31@gmail.com">
+                            </div>
+                            <!-- Form Row-->
+                            <div class="row gx-3 mb-3">
+                                <!-- Form Group (phone number)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputPhone">Phone number</label>
+                                    <input class="form-control" id="inputPhone" type="tel"
+                                        placeholder="Enter your phone number" value="555-123-4567">
+                                </div>
+                                <!-- Form Group (birthday)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputBirthday">Birthday</label>
+                                    <input class="form-control" id="inputBirthday" type="text" name="birthday"
+                                        placeholder="Enter your birthday" value="06/10/1988">
+                                </div>
+                            </div>
+                            <!-- Save changes button-->
+                            <a href="../Indexl.html" class="btn btn-primary CancelBTN SaveCHnageSBT" type="button">Save
+                                changes</a>
+                            <a href="../Indexl.html" class="btn btn-outline-danger CancelBTN">Cancel</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The Modal of Change the Photo  -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Change profile image</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="DragAreaParnt">
+                        <input type="file" class="TheInputFile" name="" id="">
+                        <div class="TheDragAreaContent">
+                            <b>
+                                Drag & Drop
+                                <br>
+                                or <span class="BrowseBTN">Browse</span> 
+                            </b>
+                            <br>
+                            <small>Spport JPG , PNG , SVG</small>
+                        </div>
+                        <div class="ImageArea">
+                            <img class="TheOutPutImage" src="" alt="">
+                            <div class="EditXMark">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+                        <b class="Error">The Image is not Valid </b>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary SaveChangeBTN" data-bs-dismiss="modal">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../External library files/bootstrap/js/bootstrap.min.js"></script> <!-- The Bootstrap JS File -->
+    <script src="../../External library files/fontawesome/js/all.min.js"></script> <!-- The FontaWesome JS File -->
+    <script src="JS/TheProfilePage.js"></script> <!-- My WebPage JS File -->
+</body>
+
+</html>

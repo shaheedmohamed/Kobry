@@ -1,0 +1,1100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Kanit&family=Noto+Sans:wght@200;300;500&family=Nunito:ital@1&family=Playpen+Sans:wght@400;500&family=Raleway:wght@500&family=Roboto+Slab:wght@500&family=Rubik:wght@300;400&family=Sedgwick+Ave+Display&family=Tilt+Neon&family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Kanit&family=Noto+Sans:wght@200;300;500&family=Nunito:wght@600&family=Playpen+Sans:wght@400;500&family=Raleway:wght@500&family=Roboto+Slab:wght@500&family=Rubik:wght@300;400&family=Sedgwick+Ave+Display&family=Tilt+Neon&family=Work+Sans:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-family: 'Tilt Neon', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    /* border: 1px solid black; */
+}
+
+body {
+    background-color: #f5f3f0;
+    height: 2000px;
+}
+
+header {
+    opacity: 0;
+}
+
+.headerEdit {
+    animation: TheHeaderEdit 0.5s linear;
+}
+
+@keyframes TheHeaderEdit {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+}
+
+/* The Intro Website */
+.IntroImg {
+    animation: TheEnterAni .6s linear;
+
+}
+
+.TheLogoNameInIntroPage {
+    animation: TheEnterAniLogoName 0.9s linear;
+}
+
+.TheLogoDisCratiptonInIntroPage {
+    animation: TheEnterAniLogoDisCrtaptoption 1s linear;
+
+}
+
+.IntroPage {
+    text-align: center;
+}
+
+.IntroImg {
+    width: 600px;
+}
+
+.ContABS {
+    position: relative;
+    width: 562px;
+    margin-right: auto;
+    margin-left: auto;
+    bottom: 220px;
+    user-select: none;
+}
+
+.TheLogoNameInIntroPage {
+    margin-top: -20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+@keyframes TheEnterAni {
+    0% {
+        position: relative;
+        top: 100px;
+        opacity: 0;
+    }
+
+    100% {
+        position: relative;
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes TheEnterAniLogoName {
+    0% {
+        position: relative;
+        top: 150px;
+        opacity: 0;
+    }
+
+    100% {
+        position: relative;
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes TheEnterAniLogoDisCrtaptoption {
+    0% {
+        position: relative;
+        top: 170px;
+        opacity: 0;
+    }
+
+    100% {
+        position: relative;
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+.TheOutRoImg {
+    animation: TheOutAni .6s linear;
+
+}
+
+.TheOutRoLogoName {
+    animation: TheOutAniLogoName 1s linear;
+}
+
+.TheOutRoDis {
+    animation: TheOutAniLogoDisCrtaptoption 1.2s linear;
+}
+
+@keyframes TheOutAni {
+    0% {
+        position: relative;
+        bottom: 0px;
+        opacity: 1;
+    }
+
+    100% {
+        position: relative;
+        bottom: 100px;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes TheOutAniLogoName {
+    0% {
+        position: relative;
+        bottom: 0px;
+        opacity: 1;
+    }
+
+    100% {
+        position: relative;
+        bottom: 150px;
+        opacity: 0;
+    }
+}
+
+@keyframes TheOutAniLogoDisCrtaptoption {
+    0% {
+        position: relative;
+        bottom: 0px;
+        opacity: 1;
+    }
+
+    100% {
+        position: relative;
+        bottom: 170px;
+        opacity: 0;
+    }
+}
+
+.disPLAYEDNONE {
+    display: none;
+}
+
+.IntroPage {
+    position: absolute;
+    top: 0px;
+    /* width: ; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width:602px) {
+
+    .IntroPage,
+    .ContABS {
+        width: 70%;
+        font-size: 15px;
+    }
+
+    .IntroImg {
+        width: 97%;
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+        /* bottom: -30px; */
+        margin-bottom: 25px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.TheProjectWord {
+    color: #f58634;
+    border-bottom: 1px solid #f58634;
+}
+
+/* The Start */
+/* Header */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    /* position: fixed; */
+    width: 100%;
+}
+
+.NavBrandImg {
+    width: 46px;
+    margin-top: 5px;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.TheMainA {
+    color: black;
+}
+
+.TheMainA {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.TheNavIcon {
+    font-size: 19px;
+}
+
+.TheNavIcon,
+.TheMainA {
+    color: gray;
+}
+
+.HomePageIconNavBar {
+    /* color: black; */
+    position: relative;
+    bottom: .2px;
+}
+
+.TheNavIcon {
+    transition: all .3s linear;
+}
+
+.TheMainA:hover .TheNavIcon {
+    color: black;
+}
+
+.TheMainA:hover h6 {
+    color: black;
+}
+
+.TheProFilePart {
+    position: relative;
+    bottom: 7px;
+}
+
+.TheMainA {
+    transition: all .3s linear;
+}
+
+.TheMainA:hover .UnkowImg {
+    color: black;
+}
+
+.fa-sort-down {
+    position: relative;
+    bottom: 3px;
+}
+
+.TheMainUl {
+    display: flex;
+    justify-content: space-around;
+    gap: 35px;
+    position: relative;
+    top: 22px;
+    /* align-items: center ; */
+    right: 100px;
+}
+
+.ImgAndInput {
+    position: relative;
+    left: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.InputPart {
+    /* border: 1px solid black; */
+    height: 35px;
+    padding-top: 5px;
+    margin-top: 6px;
+    margin-left: 20px;
+    background-color: #edf3f8;
+    padding: 10px;
+    border-radius: 4px;
+    width: 290px;
+    display: flex;
+    align-items: center;
+}
+
+.ImgAndInput,
+.InputPart {
+    display: flex;
+}
+
+.InputPart {
+    align-items: center;
+}
+
+.fa-magnifying-glass {
+    font-size: 20px;
+    background-color: #edf3f8;
+    position: relative;
+    top: 2px;
+}
+
+.SearchInput {
+    background-color: #edf3f8;
+    /* height: 30px; */
+    position: relative;
+    /* bottom: 3.5px; */
+    border: 0px;
+    margin-top: 2px;
+    margin-left: 10px;
+    width: 300px;
+}
+
+.SearchInput:focus {
+    border: none;
+    outline: none;
+}
+
+.ssss {
+    display: none;
+    /* border: 1px solid black; */
+    cursor: pointer;
+    /* padding: 10px; */
+    position: relative;
+    right: 25px;
+    font-size: 22px;
+    margin-top: 7px;
+    /* background-color: #edf3f8; */
+}
+
+.UnkowImg {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.TheRightPart {
+    border-left: 1px solid gray;
+    position: relative;
+    bottom: 15px;
+    right: 5px;
+}
+
+.TheBTNS {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.fa-magnifying-glass:hover {
+    cursor: pointer;
+}
+
+.TheDelAndShowSearch {
+    display: none;
+    cursor: pointer;
+}
+
+.TheSearchInputInSmallScreanEdit {
+    display: flex;
+    gap: 7px;
+    position: relative;
+    top: 5.9px;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+}
+
+@media (max-width:1211px) {
+    .MoveIngOne {
+        position: relative;
+        top: 5.9px;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .SearchInput {
+        display: none;
+    }
+
+    .InputPart {
+        background-color: transparent;
+        width: 50px;
+        border: 0px solid black;
+        /* display: none; */
+    }
+
+    .svg-inline--fa {
+        background-color: transparent;
+    }
+
+    .Editfa-xmarkEdit {
+        display: none;
+    }
+
+    .TheDelAndShowSearch {
+        display: block;
+    }
+
+    .SearchInputSMWidth {
+        display: flex;
+        gap: 7px;
+        position: relative;
+        top: 2.9px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .SearchInput {
+        border: none;
+        border: 2px solid white;
+    }
+
+    .SearchInputSMWidth {
+        display: none;
+    }
+
+    .TheSearchInputInSmallScreanEdit {
+        display: flex;
+    }
+}
+
+/* #f58634 */
+.btn-outline-warning {
+    outline-color: #f58634;
+    border: 1px solid #f58634;
+    color: #f58634;
+}
+
+.btn-outline-warning:hover {
+    background-color: #f58634;
+    color: white;
+}
+
+.TheNavIcon,
+h6 {
+    transition: all .4s linear;
+}
+
+.TheNavIcon:hover {
+    color: black;
+}
+
+.TheNavIcon:hover h6 {
+    color: black;
+}
+
+
+.InputPartSmallScreen {
+    /* border: 1px solid black; */
+    height: 45px;
+    padding-top: 5px;
+    margin-top: 6px;
+    /* margin-left: 20px; */
+    background-color: #edf3f8;
+    padding: 10px;
+    border-radius: 4px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    display: none;
+    right: 100px;
+    text-align: left;
+}
+
+.Editfa-magnifying-glassEdit {
+    position: relative;
+    top: 2px;
+}
+
+.SearchInputSmallScreen {
+    background-color: #edf3f8;
+    /* height: 30px; */
+    position: relative;
+    bottom: 1px;
+    border: 0px;
+    margin-top: 4px;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.SearchInputSmallScreen:focus {
+    outline: none;
+    border: none;
+}
+
+.TheDelIconInSmallScreen {
+    cursor: pointer;
+    font-size: 25px;
+    position: absolute;
+    right: 00px;
+    top: 3px;
+    width: 30px;
+    display: none;
+}
+
+.Editxmark {
+    position: relative;
+}
+
+.SpanSmallScrean {
+    display: flex;
+    width: 50%;
+}
+
+.TheSmallParTParent {
+    display: flex;
+    width: 85%;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+main {
+    padding: 20px;
+}
+
+/* The Haperger Menu */
+.TheHAmpMenu {
+    display: none;
+}
+
+@keyframes TheBottomNavAni {
+    0% {
+        transform: translateY(100px);
+    }
+}
+
+.BottomNavBar {
+    display: none;
+}
+
+/* The Nav in Small Screan */
+@media (max-width:1030px) {
+    .TheHAmpMenu {
+        display: flex;
+        font-size: 30px;
+        margin-right: 10px;
+        margin: 10px 10px;
+        color: #f58634;
+        cursor: pointer;
+    }
+
+    .EditTheOpen {
+        cursor: pointer;
+    }
+
+    .RemovedPartInPhoneScrean,
+    .TheMainUl {
+        display: none;
+    }
+
+    nav {
+        /* padding: 13.9px 0px; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .BottomNavBar {
+        background-color: white;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+        width: 100%;
+        text-align: center;
+        gap: 20px;
+        font-size: 30px;
+        position: fixed;
+        bottom: 0px;
+        padding: 10px 10px 10px 10px;
+        color: rgba(0, 0, 0, 0.678);
+        align-items: center;
+        visibility: hidden;
+        z-index: 1000;
+    }
+
+    .AddNewPostPart {
+        border: 2px solid;
+    }
+
+    .activeIconNavBar {
+        color: black;
+    }
+
+    .OnClickIconBottomNavBar {
+        cursor: pointer;
+    }
+
+    .AddNewPostPart {
+        font-size: 25px;
+        border: 1.5px solid #198754;
+        color: #198754;
+    }
+
+    /* The Left Part */
+}
+
+.TheRightPartInSmallScreanHamprgerMenu {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 50vw;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    display: none;
+}
+
+.TheRightPartInSmallScreanHamprgerMenuAnimationIn {
+    animation: TheMineNavSideShowIN 0.2s linear;
+}
+
+@keyframes TheMineNavSideShowIN {
+    0% {
+        transform: translateX(400px);
+    }
+}
+
+.TheHampMenu2 {
+    font-size: 30px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.HeaderHampMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f58634;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+}
+
+.TheSecondul {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 18px;
+}
+
+.TheAOfLiInSmallScreanHampMenu {
+    padding-left: 15px;
+    width: 100%;
+    display: inline-block;
+    border-left: 0px solid;
+    border-right: 0px solid;
+    transition: all .3s linear;
+}
+
+.TheAOfLiInSmallScreanHampMenu:hover {
+    background-color: rgba(128, 128, 128, 0.30);
+    color: #f58634;
+}
+
+.btnGroups {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    align-content: center;
+
+}
+
+.inputSearchSmallScrean {
+    border: 1px solid black;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: #edf3f8;
+    margin: 0px 5px;
+}
+
+.TheInputScrean {
+    margin: 5px 0px;
+}
+
+.Eidtmagnifying {
+    position: relative;
+    margin-bottom: 0.2px;
+}
+
+.InputSmallScreanHamp {
+    width: 80%;
+    background-color: #edf3f8;
+    border: none;
+}
+
+.InputSmallScreanHamp:focus {
+    border: none;
+    outline: none;
+}
+
+.OnClickIconBottomNavBar {
+    transition: all .3s linear;
+
+}
+
+.OnClickIconBottomNavBar:hover {
+    color: black;
+}
+.TheIconText{
+    color: black;
+}
+/* Edit The Profile Page */
+body{
+    background-color: #fefefe;
+}
+main{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+}
+/* Column one */
+body{
+    background-color: #f5f3f0;
+}
+.coulmnOne{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+.ProfIleNameAndInfo , .socialmediaParnt , .TheChartOne{
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.ProfileImage{
+    width: 100px;
+    border-radius: 50%;
+}
+.ImageParnt{
+    text-align: center;
+}
+.DisOfImage{
+    text-align: center;
+    margin-top: 15px;
+}
+.UserName{
+    font-size: 25px;
+}
+.DisOfUserName{
+    font-weight: 100;
+    padding: 15px;
+    border-radius: 5px;
+}
+.fa-chrome , .fa-github{
+    color: #343a40;
+}
+.fa-facebook{
+    color: #316FF6;
+}
+.fa-instagram{
+    color: #dc4b53;
+}
+.fa-twitter{
+    color: #1d9ceb;
+}
+.socialmediaEle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    align-items: center;
+}
+.Edit32{
+    display: flex;
+    gap: 40;
+}
+.NameAndIcon{
+    display: flex;
+    align-items: center;
+    gap: 5px    ;
+}
+.TheHrEle1{
+    margin: 10px 0px;
+}
+.TheBtnEditProfile{
+    position: relative;
+    top: 40px;
+    height: 50px;
+    width: 100%;
+}
+.CoulmnTwo{
+    grid-column: 2/4;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.TheInfo{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+.TheRowOfInfo{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-rows: 1fr;
+    /* gap: 200px; */
+    /* justify-content: space-between; */
+
+    align-items: center;
+    user-select: none;
+}
+.TheDispaly{
+    font-weight: bold;
+}
+.TheDispaly , .TheOutPut{
+    /* border: 1px solid black; */
+    margin-bottom: 0px;
+}
+.TheOutPut{
+    user-select: text;
+}
+.TheHrElementTwo{
+    margin: 15px 0px;
+}
+.DisOfUserNameParnt{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.TheBoxShadow{
+    box-shadow: 0px 0px 4px black;
+}
+.TheChartEle{
+    margin-bottom: 5px;
+}
+.TheChartParnt{
+    border: 2px solid black;
+    height: 18px;
+    background-color: #316ff611;
+    border-radius: 6px;
+}
+.TheDisplayOfDisplay{
+    display: block;
+    margin-bottom: 10px;
+}
+.TheChartElement{
+    border-radius: 4px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: #316FF6;
+    height: 100%;
+    width: 70%;
+}
+.TheChartElementTwo{
+    width: 50%;
+}
+.TheChartElementOne{
+    width: 10%;
+}
+.TheChartElementThree{
+    width: 90%;
+}
+.TheChartElementFour{
+    width: 100%;
+}
+.TheChartElementFive{
+    width: 20%;
+}
+.socialmediaParnt{
+    position: relative;
+}
+.Plus{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    /* top: 25px; */
+    bottom: 10px;
+
+    /* position: relative; */
+    text-align: center;
+    background-color: #343a40;
+    color: white;
+    width: 94%;
+    cursor: pointer;
+    transition: all .19s linear;
+}
+.Plus:hover{
+    background-color: #24272b;
+}
+.TheBigParntDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.TheParntOfIconAndName{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.TheURLofLink{
+    cursor: pointer;
+}
+#ErrorB{
+    display: none;
+    color: red;
+    margin-top: 5px;    
+}
+.TheImageProfile{
+    width: 100%;
+    border: 1.5px solid black;
+}
+.ImageArea{
+    position: relative;
+}
+.TheInputFile{
+    display: none;
+}
+.TheDragAreaContent{
+    text-align: center;
+    border-radius: 10px;
+    border: 4px dashed #0061f293;
+    padding: 70px 10px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.ImageArea{
+    display: none;
+}
+.BrowseBTN{
+    color: #0061f2;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+}
+small{
+    font-size: 13px;
+    margin-top: 25px;
+}
+.Error{
+    color: red;
+    display: none;
+    margin-top:5px;
+}
+.TheOutPutImage{
+    width: 100%;
+    border-radius: 7px;
+    border: 2px solid #292929;
+}
+.EditXMark{
+    padding: 1px 5px;
+    border-radius: 2px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #292929;
+    background-color: white;
+}
+.mesdnu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+  }
+  .line {
+    fill: none;
+    stroke: #f58634;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+  }
+  .line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  .opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+  }
+  .opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+.HampMenuOnly{
+    width: 50px;
+    margin-right: 10px;
+}
+nav{
+    height: 65px;
+}
+.ProFilePart{
+    color: black;
+}
+.TheRightPartInSmallScreanHamprgerMenu{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 50vw;
+    position: absolute;
+    right: 0px;
+    top: 65px;
+    height: 100%;
+    display: none;
+    z-index: 99999;
+
+}
+@keyframes TheSideNavIn {
+    0%{
+        opacity: 0;
+        transition: all .2s linear;
+        transform: translateX(300px);
+    }
+}
+@keyframes TheSideNavOut {
+    100%{
+        opacity: 0;
+        transition: all .2s linear;
+        transform: translateX(300px);
+    }
+}
+.HomePart{
+    color: #525252;
+}
+@media only screen and (max-width: 780px) {
+    .main{
+        background-color: red;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+    }
+    .coulmnOne{
+        grid-template-columns: 1/2;
+        grid-template-rows: 1/2;
+    }
+}
